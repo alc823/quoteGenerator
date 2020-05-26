@@ -10,14 +10,6 @@ const Fade = styled.div`animation: 3s ${keyframes`${fadeIn}`} infinite`;
 
 class Quote extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            number: 0,
-            fade: false
-        }
-    }
-
     render() {
         const {handleGenerate, number } = this.props
         return (
