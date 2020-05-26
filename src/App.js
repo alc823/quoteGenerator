@@ -3,12 +3,10 @@ import './App.css';
 import Quote from "./Quote.js";
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      number: 0,
-      fade: false
-    }
+  
+  state = {
+    number: 0,
+    fade: false
   }
 
   handleGenerate = () => {
@@ -25,7 +23,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="application">
         <Quote
           number={this.state.number}
           fade={this.state.fade}
